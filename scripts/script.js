@@ -60,7 +60,7 @@ const importOrder = {
     // sides grabbed
     const sides = $('input[name="sides"]:checked').val();
 
-    // Create a JSON object
+    //json object for console
     const orderData = {
         name,
         contact,
@@ -70,7 +70,7 @@ const importOrder = {
         sides: sides || null, // If no side is selected, set to null
       };
   
-      // Log the JSON object to the console
+      // log the json object 2 the console
       console.log(JSON.stringify(orderData, null, 2));
 
     // create seperate card within the orderOutput div
