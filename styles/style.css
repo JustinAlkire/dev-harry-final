@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  background-image: url("https://thumbs.dreamstime.com/b/beautiful-seamless-pattern-many-hamburgers-modern-design-fastfood-template-cute-tasty-burgers-trendy-textile-fabric-beautiful-190473570.jpg");
+}
+
+.card {
+  background-color: rgb(250, 231, 249);
+}

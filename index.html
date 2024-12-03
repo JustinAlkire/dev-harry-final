@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Harry-final-project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="/styles/style.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+    <a class="navbar-brand" href="#">Justin's Burger Shop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">🏠 Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/JustinAlkire/JustinAlkire" target="_blank">
+                  <i class="fab fa-github"></i> Github / Source Code
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://validator.nu/?doc=https%3A%2F%2Fjustinalkire.github.io%2FJustinAlkire%2Findex.html" target="_blank">
+                ✅ Nu Validator
+            </a>
+          </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+  <div class="card">
+    <div class="col-md-6 mt-4 offset-md-3">
+      <h1>Justin's Burgers</h1>
+      <h5>Please use this form to place an order!</h5>
+      <form id="orderForm">
+      <button type="button" id="importOrder" class="btn btn-primary">Click here to import your previous order</button>
+      <div class="mt-3">
+        <div class="input-group mb-3">
+        <span class="input-group-text" id="name">Name for your order:</span>
+        <input id="orderName" type="text" class="form-control" placeholder="Enter your name">
+      </div>
+      <!--We use type tel for mobile functionality ensuring mobile users get a numeric keypad when entering a phone number-->
+      <div class="mt-3">
+        <div class="input-group mb-3">
+        <span class="input-group-text" id="contact">Phone #</span>
+        <input id="phoneContact" type="tel" class="form-control" placeholder="In case we need to contact you">
+      </div>
+      <p>*Phone # is a mobile friendly entry*</p>
+      <div class="mb-3 section-header">
+        <label class="form-label"><strong>Which type of burger would you like?</strong><label>
+          </div>
+      <select id="burgerType" class="form-select">
+      <option value="hamburger">Hamburger</option>
+      <option value="cheeseburger">Cheeseburger</option>
+      <option value="chickenburger">Chicken Burger</option>
+      </select>
+     <div class="mb-3 section-header">
+       <label class="form-label"><strong>Which toppings would you like?</strong><label>
+         </div>
+         <label><input type="checkbox" name="toppings" value="bacon"> Bacon</label><br>
+         <label><input type="checkbox" name="toppings" value="lettuce"> Lettuce</label><br>
+         <label><input type="checkbox" name="toppings" value="tomato"> Tomato</label><br>
+         <label><input type="checkbox" name="toppings" value="onions"> Onions</label><br>
+        
+       <br>
+       <br>
+      <div class="mb-3 section-header">
+       <label class="form-label"><strong>Which Condiments would you like?</strong><label>
+         </div>
+      <label><input type="checkbox" name="condiments" value="mayo"> Mayo</label><br>
+      <label><input type="checkbox" name="condiments" value="mustard"> Mustard</label><br>
+      <label><input type="checkbox" name="condiments" value="ketchup"> Ketchup</label><br>
+      <label><input type="checkbox" name="condiments" value="ranch"> Ranch</label><br>
+      
+      <div class="mb-3 section-header">
+       <label class="form-label"><strong>Which side dish would you like?</strong><label>
+         </div>
+      <label><input type="checkbox" name="sides" value="fries"> Fries</label><br>
+      <label><input type="checkbox" name="sides" value="mac"> Mac & Cheese</label><br>
+      <label><input type="checkbox" name="sides" value="appleSauce"> Apple sauce</label><br>
+      <label><input type="checkbox" name="sides" value="onionRings"> Onion Rings</label><br>
+      
+      <button type="submit" class="btn btn-primary">Submit Order</button>
+    </form>
+</div>
+         
+<div id="orderOutput" class="mb-3">
+</div>
+
+<footer class="py-2 mt-2">
+  <div class="container">
+    <p>© Justin's Burgers 2024</p>
+  </div>
+</footer>
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
+<script  src="/scripts/script.js"></script>
+
+</body>
+</html>
